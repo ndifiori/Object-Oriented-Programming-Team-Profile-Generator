@@ -1,14 +1,25 @@
 
-// in the index.js file we did fs.writefile with the array teamMembers array as the parameter 
+// in the index.js file we did fs.writefile with the array teamMembers 
+// the array teammembers is within the required application template file we are in now
 
 
 // let's create the team
   // this will create the html that corresponds to the users input
-// here we will use arrow functions with one parameter and no parethesis as the structure
+// here we will use a variable to store an arrow functions that stores other variables with arrows functions
+    // our arrow function have one parameter and no parethesis as the structure
 
 const generateTeam = team => {
 
-  // let's create the manager html
+    
+    // for our html structure here with bootstrap as our framework
+    // we create a card for the employer
+    // we create a header to give the name and role
+    // we create a card body 
+    // we create a list
+    // our list items are our information about the employees
+    
+    // let's create the manager html
+
   const generateManager = manager => {
     return `
         <div class="card employee-card">
@@ -28,6 +39,7 @@ const generateTeam = team => {
   };
 
   // let's create the html for engineers
+
   const generateEngineer = engineer => {
     return `
         <div class="card employee-card">
@@ -47,6 +59,7 @@ const generateTeam = team => {
   };
 
   // let's create the html for interns
+
   const generateIntern = intern => {
     return `
         <div class="card employee-card">
