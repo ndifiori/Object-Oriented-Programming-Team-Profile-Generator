@@ -1,7 +1,14 @@
-// create the team
+
+// in the index.js file we did fs.writefile with the array teamMembers array as the parameter 
+
+
+// let's create the team
+  // this will create the html that corresponds to the users input
+// here we will use arrow functions with one parameter and no parethesis as the structure
+
 const generateTeam = team => {
 
-  // create the manager html
+  // let's create the manager html
   const generateManager = manager => {
     return `
         <div class="card employee-card">
@@ -20,7 +27,7 @@ const generateTeam = team => {
         `;
   };
 
-  // create the html for engineers
+  // let's create the html for engineers
   const generateEngineer = engineer => {
     return `
         <div class="card employee-card">
@@ -39,7 +46,7 @@ const generateTeam = team => {
         `;
   };
 
-  // create the html for interns
+  // let's create the html for interns
   const generateIntern = intern => {
     return `
         <div class="card employee-card">
