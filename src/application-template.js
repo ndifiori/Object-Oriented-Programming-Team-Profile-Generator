@@ -65,7 +65,16 @@ const generateTeam = team => {
         `;
   };
 
+
+// let's create a variable with stores an empty array
+
   const html = [];
+
+// for these next steps
+    // for these we are going to push the team and add a filter to it
+        // if it doesn't pass the filter then it won't be pushed
+        // if it passes the filter then will map the engineer's in the array so each get's it owns employee card
+            // the same will go for the intern and manager
 
   html.push(team
     .filter(employee => employee.getRole() === "Manager")
@@ -86,7 +95,9 @@ const generateTeam = team => {
 
 }
 
-// export function to generate entire page
+// export function to generate entire page via the index.js user input
+// we are giving the base html and adding the team as the body of our html page which we append accordingly above
+
 module.exports = team => {
 
   return `
